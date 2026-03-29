@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://mron2yie4xjl" path="res://scenes/houses/medium_house.tscn" id="6_uk42g"]
 [ext_resource type="PackedScene" uid="uid://cpyfout4qkj8w" path="res://scenes/houses/small_house.tscn" id="7_yewih"]
 [ext_resource type="PackedScene" uid="uid://c5cxel1coxgy7" path="res://scenes/objects/trees/small_tree.tscn" id="8_8yb5x"]
+[ext_resource type="PackedScene" uid="uid://p27ctjkiyiao" path="res://scenes/objects/trees/large_tree.tscn" id="9_xa2g7"]
+[ext_resource type="PackedScene" uid="uid://df6w7pn17ioyc" path="res://scenes/objects/trees/flower_tree.tscn" id="10_jutaf"]
+[ext_resource type="PackedScene" uid="uid://bi6g74lr7yobx" path="res://scenes/objects/rocks/rock.tscn" id="11_8u0cr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hcuu"]
 texture = ExtResource("1_pudl8")
@@ -459,7 +462,11 @@ texture = ExtResource("4_8yb5x")
 6:1/0 = 0
 5:1/0 = 0
 3:2/0 = 0
+3:2/0/y_sort_origin = 1
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, 0.5, 3, 0.5, 3, 5, -3, 5)
 4:2/0 = 0
+4:2/0/y_sort_origin = 1
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, 0.5, 4, 0.5, 4, 5, -4, 5)
 5:2/0 = 0
 6:2/0 = 0
 7:2/0 = 0
@@ -472,18 +479,25 @@ texture = ExtResource("4_8yb5x")
 8:4/0 = 0
 8:2/size_in_atlas = Vector2i(1, 2)
 8:2/0 = 0
+8:2/0/y_sort_origin = 8
 1:3/0 = 0
 0:3/0 = 0
 3:0/size_in_atlas = Vector2i(2, 2)
 3:0/0 = 0
+3:0/0/y_sort_origin = 8
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, 8, 3, 8, 3, 14, -3, 14)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_jutaf"]
 scenes/1/scene = ExtResource("5_xa2g7")
 scenes/2/scene = ExtResource("6_uk42g")
 scenes/3/scene = ExtResource("7_yewih")
 scenes/4/scene = ExtResource("8_8yb5x")
+scenes/5/scene = ExtResource("9_xa2g7")
+scenes/6/scene = ExtResource("10_jutaf")
+scenes/7/scene = ExtResource("11_8u0cr")
 
 [resource]
+physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Grass Terrain"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)

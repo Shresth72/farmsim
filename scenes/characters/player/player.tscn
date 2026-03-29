@@ -402,9 +402,10 @@ height = 12.0
 radius = 3.0
 
 [node name="Player" type="CharacterBody2D" unique_id=403715745]
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_6avc5")
-current_tool = 3
+current_tool = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2100665214]
 position = Vector2(0, -8)
